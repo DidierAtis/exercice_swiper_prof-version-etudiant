@@ -36,3 +36,51 @@
     object-fit: cover;
   }
 }
+.swiper-4{
+  width: 100%;
+
+  background-color: wheat;
+
+  .swiper-slide{
+
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .swiper-pagination{
+
+  }
+
+  .swiper-pagination-bullet{
+
+    background-color: white;
+    opacity: 1;
+    border-radius: 0;
+    transform: rotate(45deg);
+  }
+
+  .swiper-pagination-bullet-active{
+
+    background-color: teal;
+  }
+}
+
+.swiper-5{
+  width: 100%;
+
+  .swiper-pagination-bullet{
+
+    background-color: white;
+    opacity: 1;
+    border-radius: 0;
+    transform: rotate(45deg);
+  }
+
+  .swiper-pagination-bullet-active{
+
+    background-color: teal;
+  }
+}
