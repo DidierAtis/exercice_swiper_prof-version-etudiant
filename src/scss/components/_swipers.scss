@@ -1,0 +1,38 @@
+.swiper-1{
+  width: 600px;
+  height: 300px;
+
+  background-color: wheat;
+
+  .swiper-slide{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+}
+
+
+
+.swiper-2{
+  width: 800px;
+  height: 400px;
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.swiper-3{
+  width: 900px;
+  height: 500px;
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

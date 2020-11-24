@@ -1,0 +1,26 @@
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--ff-title);
+  line-height: var(--lh-thin);
+  margin: 0;
+}
+
+h1{
+  font-size: var(--fz-h1);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: var(--fz-h2);
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: var(--fz-h3);
+}
+
+h4{
+  font-size: var(--fz-h4);
+}

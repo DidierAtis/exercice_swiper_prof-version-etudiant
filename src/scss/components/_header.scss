@@ -1,0 +1,82 @@
+.main-header {
+    display: flex;
+    background-color: wheat;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+
+    a {
+        display: inline-block;
+        padding: 10px 20px;
+        position: relative;
+        &::before, &::after {
+            background-color: teal;
+            content:"";
+            display: block;
+            width: 4px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            transform: scaleY(0);
+        }
+        &::before {
+            left: 0;
+            transform-origin: top left;
+            transition: .1s transform linear .5s;
+            
+        }
+        &::after {
+            right: 0;
+            transform-origin: bottom left;
+            transition: .1s transform linear .2s;
+        }
+        span {
+            &::before, &::after {
+                background-color: teal;
+                content:"";
+                display: block;
+                width: 100%;
+                height: 4px;
+                position: absolute;
+                left:0;
+                transform: scaleX(0);
+            }
+            &::before {
+                top: 0;
+                transform-origin: top right;
+                transition: .2s transform linear ;
+            }
+            &::after {
+                bottom: 0;
+                transform-origin: top left;
+                transition: .2s transform linear .3s;
+            }
+        }
+
+        &:hover {
+            &::before {
+                transform: scaleY(1);
+                transform-origin: top left;
+                transition: .1s transform linear;
+            }
+            span::after {
+                transform: scaleX(1);
+                transform-origin: top left;
+                transition: .2s transform linear .1s;
+            }
+            &::after {
+                transform: scaleY(1);
+                transform-origin: bottom left;
+                transition: .1s transform linear .3s;
+            }
+            span::before {
+                transform: scaleX(1);
+                transform-origin: top right;
+                transition: .2s transform linear .4s;
+            }
+        }
+    }
+}

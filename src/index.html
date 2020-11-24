@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&family=Titillium+Web&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+    <header class="main-header">
+        <h1>SWIPER.JS</h1>
+        <p>L'objectif de ce laboratoire est de se familiariser avec une librairie javascript. Pour cette exercice nous allons apprendre à utiliser une libraire de caroussel et lire sa documentation</p>
+        <a href="https://swiperjs.com/"><span>Lien vers Swiper.js</span></a>
+    </header>
+    
+    <section>
+        <header>
+            <h2>Exemple 1(fait avec le prof)</h2>    
+            <div>
+                <p>Doit contenir:</p>
+                <ul>
+                    <li>600x300 <span>dans le css</span></li>
+                    <li>swiper-container doit avoir un background: wheat <span>dans le css</span></li>
+                    <li>Le contenu de swiper-slide, un en dessous de l'autre centré <span>dans le css</span></li>
+                    <li>Pagination</li>
+                    <li>Être horizontal</li>
+                </ul>
+            </div>
+        </header>
+        
+        <div class="swiper-container swiper-1">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <h3>Danny Guettab</h3>
+                </div>
+                <div class="swiper-slide">
+                    <h3>Caroline Loubier</h3>
+                </div>
+                <div class="swiper-slide">
+                    <h3>Gabriel Clément</h3>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>    
+        </div>
+    </section>
+    <section>
+        <header>
+            <h2>Exemple 2</h2>    
+            <div>
+                <p>Doit contenir:</p>
+                <ul>
+                    <li>800x400 <span>dans le css</span></li>
+                    <li>Bouton de navigation</li>
+                    <li>Être horizontal</li>
+                    <li>Continuer à l'infini</li>
+                    <li>Tenter de faire en sorte que les images ne soit pas étiré<span>Défi</span></li>
+                </ul>
+            </div>
+        </header>
+        <div class="swiper-container swiper-2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+        <img src="images/produit-01.jpg" class="swiper-slide" alt="">
+        <img src="images/produit-02.jpg" class="swiper-slide"  alt="">
+        <img src="images/produit-03.jpg" class="swiper-slide"  alt="">
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section>
+        <header>
+            <h2>Exemple 3</h2>    
+            <div>
+                <p>Doit contenir:</p>
+                <ul>
+                    <li>900x500 <span>dans le css</span></li>
+                    <li>Doit jouer automatiquement</li>
+                    <li>Avoir un délai de 2 secondes entre chaque slide</li>
+                    <li>Être vertical</li>
+                    <li>Continuer à l'infini</li>
+                    <li>Ne doit pas permettre l'interaction avec la souris</li>
+                    <li>Tenter de faire en sorte que les images ne soit pas étiré<span>Défi</span></li>
+                </ul>
+            </div>
+        </header>
+        <div class="swiper-container swiper-3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+        <img src="images/produit-01.jpg" class="swiper-slide" alt="">
+        <img src="images/produit-02.jpg" class="swiper-slide"  alt="">
+        <img src="images/produit-03.jpg" class="swiper-slide"  alt="">
+        <img src="images/produit-04.jpg" class="swiper-slide"  alt="">
+        <img src="images/produit-05.jpg" class="swiper-slide"  alt="">
+        <img src="images/produit-06.jpg" class="swiper-slide"  alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <header>
+            <h2>Exemple 4</h2>    
+            <div>
+                <p>Doit contenir:</p>
+                <ul>
+                    <li>100% de l'espace en largeur <span>dans le css</span></li>
+                    <li>swiper-container doit avoir un background: wheat <span>dans le css</span></li>
+                    <li>Chaque slide une hauteur de 300 avec le texte centré en hauter et largeur <span>dans le css</span></li>
+                    <li>Être horizontal</li>
+                    <li>avoir de la pagination</li>
+                    <li>Changé les couleurs des listes de pagination <span>defi</span>
+                            <ul>
+                                <li>Couleur non-active: blanc</li>
+                                <li>Couleur active: teal</li>
+                                <li>forme losange, 7px par 7px</li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        
+        <!-- <div class="swiper-slide">
+            <h3>Playsation 5</h3>
+            <p>Rock on!</p>
+        </div>
+        <div class="swiper-slide">
+            <h3>X-Box Series X</h3>
+            <p>Pourquoi faire simple quand on peut faire compliquer comme nom</p>
+        </div>
+        <div class="swiper-slide">
+            <h3>Google stadia</h3>
+            <p>Fail!</p>
+        </div>
+        <div class="swiper-slide">
+            <h3>Nintendo Switch</h3>
+            <p>It's a meeee Mario!</p>
+        </div> -->
+
+    </section>
+    <section>
+        <header>
+            <h2>Exemple 5</h2>    
+            <div>
+                <p>Doit contenir:</p>
+                <ul>
+                    <li>100% de l'espace en largeur <span>dans le css</span></li>
+                    <li>Le contenu de swiper-slide, un en dessous de l'autre centré <span>dans le css</span></li>
+                    <li>Être horizontal</li>
+                    <li>Faire le responsive mobile
+                        <ul>
+                            <li>1 slide par écran</li>
+                            <li>Couleur active: teal</li>
+                        </ul>
+                    </li>
+                    <li>Faire le responsive pour 480px et plus
+                        <ul>
+                            <li>2 slide par écran</li>
+                            <li>30px d'espace entre les slides</li>
+                        </ul>
+                    </li>
+                    <li>Faire le responsive pour 780px et plus
+                        <ul>
+                            <li>3 slide par écran</li>
+                            <li>30px d'espace entre les slides</li>
+                        </ul>
+                    </li>
+                    <li>Faire le responsive pour 1000px et plus
+                        <ul>
+                            <li>4 slide par écran</li>
+                            <li>30px d'espace entre les slides</li>
+                        </ul>
+                    </li>
+                    <li>Faire le responsive pour 1200px et plus
+                        <ul>
+                            <li>5 slide par écran</li>
+                            <li>30px d'espace entre les slides</li>
+                        </ul>
+                    </li>
+                    <li>Changé les couleurs des listes de pagination <span>defi</span>
+                            <ul>
+                                <li>Couleur non-active: blanc</li>
+                                <li>Couleur active: teal</li>
+                                <li>forme losange, 7pxx7px</li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- <div class="swiper-slide">
+            <img src="images/produit-01.jpg" alt="">
+            <h3>Lunette</h3>
+            <p>129.99</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/produit-02.jpg" alt="">
+            <h3>Soulier</h3>
+            <p>69.95$</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/produit-03.jpg" alt="">
+            <h3>Sac à dos</h3>
+            <p>39.99$</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/produit-04.jpg" alt="">
+            <h3>Casquette</h3>
+            <p>19.99$</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/produit-05.jpg" alt="">
+            <h3>Lunette</h3>
+            <p>54.95$</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/produit-06.jpg" alt="">
+            <h3>Soulier</h3>
+            <p>99.99$</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/produit-07.jpg" alt="">
+            <h3>Sac à dos</h3>
+            <p>65.99$</p>
+        </div> -->
+    </section>
+    <section>
+        <header>
+            <h2>Exemple 6</h2>    
+            <div>
+                <p>Doit contenir:</p>
+                <ul>
+                    <li>900x500 <span>dans le css</span></li>
+                    <li>Faire un card flip</li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- <img src="images/produit-01.jpg" class="swiper-slide" alt="">
+        <img src="images/produit-02.jpg" class="swiper-slide"  alt="">
+        <img src="images/produit-03.jpg" class="swiper-slide"  alt="">
+        <img src="images/produit-04.jpg" class="swiper-slide"  alt="">
+        <img src="images/produit-05.jpg" class="swiper-slide"  alt="">
+        <img src="images/produit-06.jpg" class="swiper-slide"  alt=""> -->
+
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
